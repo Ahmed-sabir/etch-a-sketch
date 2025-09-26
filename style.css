@@ -1,0 +1,15 @@
+#container {
+    display: flex;
+    height: 60%;
+    width: 60%;
+    flex-wrap: wrap;
+    gap: 2px;
+}
+
+.box {
+    background-color: blueviolet;
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+    
+}
