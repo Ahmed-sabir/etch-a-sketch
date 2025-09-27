@@ -7,20 +7,24 @@ box.classList.add("box");
 container.appendChild(box);
 }
 
-const hover = document.querySelectorAll(".box");
+addHover();
 
-hover.forEach(box => {  
+
+ function addHover () {
+   
+   const boxes = document.querySelectorAll(".box");
+   
+   
+    boxes.forEach(box => {
     box.addEventListener("mouseenter", () => {
-    box.style.backgroundColor = "blue";
-});
+        box.style.backgroundColor = "blue";
+    });
 
-   box.addEventListener("mouseleave", () => {
-    box.style.backgroundColor = "red";
-   })
-
-
-
-})
+    box.addEventListener("mouseleave", () => {
+        box.style.backgroundColor = "red";
+    })
+ })
+}
 
 
 const btn = document.querySelector("#reset");
@@ -46,6 +50,9 @@ btn.addEventListener("click", () =>{
 
         container.appendChild(box);
 
+        
+
         }
+    addHover();
 
 })
